@@ -10,15 +10,16 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    override func viewDidLoad() {
+         super.viewDidLoad()
+     }
+     
     //MARK: - Properties
     
     var gigController: GigController!
     var loginType: LoginType = .signup
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
+ 
     //MARK: - IBOutlets
     
     @IBOutlet weak var segmentedControl: UISegmentedControl!
