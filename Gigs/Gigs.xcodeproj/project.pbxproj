@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3804E85223D7D89E00F6AB93 /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3804E85123D7D89E00F6AB93 /* APIController.swift */; };
 		3804E85A23D7DE3700F6AB93 /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3804E85923D7DE3700F6AB93 /* Signup.swift */; };
 		3804E85C23D7DE4A00F6AB93 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3804E85B23D7DE4A00F6AB93 /* Login.swift */; };
 		3804E85E23D7E09700F6AB93 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3804E85D23D7E09700F6AB93 /* HTTPMethod.swift */; };
@@ -26,7 +25,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3804E85123D7D89E00F6AB93 /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
 		3804E85923D7DE3700F6AB93 /* Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
 		3804E85B23D7DE4A00F6AB93 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		3804E85D23D7E09700F6AB93 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
@@ -57,15 +55,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3804E85023D7D85E00F6AB93 /* Application */ = {
-			isa = PBXGroup;
-			children = (
-				3804E85123D7D89E00F6AB93 /* APIController.swift */,
-				386A2D3B23D69FF4003FFD72 /* AppDelegate.swift */,
-			);
-			path = Application;
-			sourceTree = "<group>";
-		};
 		3804E85823D7DE1D00F6AB93 /* URL Data Session Methods */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,7 +83,7 @@
 		386A2D3A23D69FF4003FFD72 /* Gigs */ = {
 			isa = PBXGroup;
 			children = (
-				3804E85023D7D85E00F6AB93 /* Application */,
+				386A2D3B23D69FF4003FFD72 /* AppDelegate.swift */,
 				386A2D4F23D6A008003FFD72 /* Models */,
 				386A2D5D23D6B4B5003FFD72 /* Gig Controller */,
 				386A2D5023D6A011003FFD72 /* Views */,
@@ -236,7 +225,6 @@
 				3804E85E23D7E09700F6AB93 /* HTTPMethod.swift in Sources */,
 				386A2D5C23D6B43B003FFD72 /* User.swift in Sources */,
 				3804E85C23D7DE4A00F6AB93 /* Login.swift in Sources */,
-				3804E85223D7D89E00F6AB93 /* APIController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
