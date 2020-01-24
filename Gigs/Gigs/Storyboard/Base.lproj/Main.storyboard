@@ -42,7 +42,7 @@
                                 <connections>
                                     <outlet property="subtitleLabel" destination="1iZ-Eb-jU2" id="Ra1-A1-ARz"/>
                                     <outlet property="titleLabel" destination="TYv-C0-Dfj" id="kUW-uW-V8u"/>
-                                    <segue destination="sBm-hI-pNO" kind="modal" id="yPH-G2-5Tu"/>
+                                    <segue destination="sBm-hI-pNO" kind="modal" identifier="loginSegue" id="yPH-G2-5Tu"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -66,10 +66,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Czk-pG-lDk">
-                                <rect key="frame" x="141.5" y="373" width="131" height="32"/>
+                                <rect key="frame" x="139.5" y="373" width="135" height="32"/>
                                 <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
+                                    <segment title="Sign In"/>
+                                    <segment title="Sign Up"/>
                                 </segments>
                                 <connections>
                                     <action selector="segmentedControlTapped:" destination="sBm-hI-pNO" eventType="valueChanged" id="Y5j-g1-Z5g"/>
@@ -92,23 +92,14 @@
                                     <action selector="buttonTapped:" destination="sBm-hI-pNO" eventType="touchUpInside" id="zF6-tR-dcg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edi-D8-Fmh">
-                                <rect key="frame" x="180" y="502" width="54" height="30"/>
-                                <state key="normal" title="Sign Up"/>
-                                <connections>
-                                    <action selector="buttonTapped:" destination="sBm-hI-pNO" eventType="touchUpInside" id="x64-Ac-GgK"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="oOg-1g-Vnz" firstAttribute="centerY" secondItem="kfv-Wf-af9" secondAttribute="centerY" id="8Tp-8N-o9N"/>
                             <constraint firstItem="Czk-pG-lDk" firstAttribute="centerX" secondItem="oOg-1g-Vnz" secondAttribute="centerX" id="9G0-77-hYS"/>
-                            <constraint firstItem="edi-D8-Fmh" firstAttribute="top" secondItem="Lcm-cD-Bfy" secondAttribute="bottom" id="Cac-b6-nSA"/>
                             <constraint firstItem="Lcm-cD-Bfy" firstAttribute="top" secondItem="9uc-Yl-rVS" secondAttribute="bottom" id="HTx-sA-Fcb"/>
                             <constraint firstItem="Czk-pG-lDk" firstAttribute="bottom" secondItem="oOg-1g-Vnz" secondAttribute="top" id="JEJ-q6-6L3"/>
                             <constraint firstItem="Lcm-cD-Bfy" firstAttribute="centerX" secondItem="9uc-Yl-rVS" secondAttribute="centerX" id="PGS-QQ-XAT"/>
-                            <constraint firstItem="edi-D8-Fmh" firstAttribute="centerX" secondItem="Lcm-cD-Bfy" secondAttribute="centerX" id="aik-mg-abK"/>
                             <constraint firstItem="9uc-Yl-rVS" firstAttribute="centerX" secondItem="oOg-1g-Vnz" secondAttribute="centerX" id="dkG-xB-SwT"/>
                             <constraint firstItem="9uc-Yl-rVS" firstAttribute="top" secondItem="oOg-1g-Vnz" secondAttribute="bottom" id="fYa-6n-dmD"/>
                             <constraint firstItem="oOg-1g-Vnz" firstAttribute="centerX" secondItem="kfv-Wf-af9" secondAttribute="centerX" id="iCZ-db-uOD"/>
@@ -119,7 +110,6 @@
                         <outlet property="loginButton" destination="Lcm-cD-Bfy" id="MXU-yd-Hpm"/>
                         <outlet property="passwordLabel" destination="9uc-Yl-rVS" id="mQl-fg-IF6"/>
                         <outlet property="segmentedControl" destination="Czk-pG-lDk" id="Rxx-aY-4Ts"/>
-                        <outlet property="signupButton" destination="edi-D8-Fmh" id="qDi-gX-WRw"/>
                         <outlet property="usernameLabel" destination="oOg-1g-Vnz" id="Hsh-Ca-5Fi"/>
                     </connections>
                 </viewController>

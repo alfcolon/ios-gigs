@@ -12,9 +12,7 @@ class GigController{
     
     //MARK: - Properties
     
-    let baseURL: URL = URL(fileReferenceLiteralResourceName: "https://lambdagigs.vapor.cloud/api")
-    var bearer: Bearer?
-    
-    
-    
+    let baseURL: URL = URL(string: "https://lambdagigs.vapor.cloud/api")!
+    var bearer: Bearer? //used to present whether user is logged in or not
+    var gigs: [Gig] = []
 }

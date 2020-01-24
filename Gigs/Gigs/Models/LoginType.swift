@@ -9,6 +9,6 @@
 import Foundation
 
 enum LoginType: String{
-    case login = "Log In"
-    case signup = "Sign Up"
+    case signin
+    case signup
 }
